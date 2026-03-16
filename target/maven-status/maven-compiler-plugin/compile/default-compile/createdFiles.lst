@@ -1,0 +1,14 @@
+lk\ijse\eca\bookservice\mapper\BookMapperImpl.class
+lk\ijse\eca\bookservice\service\impl\BookServiceImpl.class
+lk\ijse\eca\bookservice\aspect\LoggingAspect.class
+lk\ijse\eca\bookservice\dto\BookResponseDTO.class
+lk\ijse\eca\bookservice\dto\BookRequestDTO.class
+lk\ijse\eca\bookservice\handler\GlobalExceptionHandler.class
+lk\ijse\eca\bookservice\entity\Book.class
+lk\ijse\eca\bookservice\mapper\BookMapper.class
+lk\ijse\eca\bookservice\exception\BookNotFoundException.class
+lk\ijse\eca\bookservice\service\BookService.class
+lk\ijse\eca\bookservice\BookServiceApplication.class
+lk\ijse\eca\bookservice\repository\BookRepository.class
+lk\ijse\eca\bookservice\controller\BookController.class
+lk\ijse\eca\bookservice\exception\DuplicateBookException.class
