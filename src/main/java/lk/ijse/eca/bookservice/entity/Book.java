@@ -21,4 +21,7 @@ public class Book {
     private String author;
     private String isbn;
     private Integer stock;
+    
+    // Cloud storage image URL
+    private String imageUrl;
 }

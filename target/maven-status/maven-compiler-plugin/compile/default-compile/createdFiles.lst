@@ -6,6 +6,7 @@ lk\ijse\eca\bookservice\dto\BookRequestDTO.class
 lk\ijse\eca\bookservice\handler\GlobalExceptionHandler.class
 lk\ijse\eca\bookservice\entity\Book.class
 lk\ijse\eca\bookservice\mapper\BookMapper.class
+lk\ijse\eca\bookservice\client\FileServiceClient.class
 lk\ijse\eca\bookservice\exception\BookNotFoundException.class
 lk\ijse\eca\bookservice\service\BookService.class
 lk\ijse\eca\bookservice\BookServiceApplication.class

@@ -9,4 +9,5 @@ public class BookResponseDTO {
     private String author;
     private String isbn;
     private Integer stock;
+    private String imageUrl;
 }

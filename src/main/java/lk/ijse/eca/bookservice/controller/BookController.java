@@ -6,8 +6,10 @@ import lk.ijse.eca.bookservice.dto.BookResponseDTO;
 import lk.ijse.eca.bookservice.service.BookService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
@@ -45,5 +47,17 @@ public class BookController {
     public ResponseEntity<Void> deleteBook(@PathVariable Long id) {
         bookService.deleteBook(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @PostMapping(value = "/{id}/image", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public ResponseEntity<BookResponseDTO> uploadImage(
+            @PathVariable Long id,
+            @RequestParam("file") MultipartFile file) {
+        return ResponseEntity.ok(bookService.uploadImage(id, file));
+    }
+
+    @DeleteMapping("/{id}/image")
+    public ResponseEntity<BookResponseDTO> deleteImage(@PathVariable Long id) {
+        return ResponseEntity.ok(bookService.deleteImage(id));
     }
 }

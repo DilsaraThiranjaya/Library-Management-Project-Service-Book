@@ -11,4 +11,6 @@ public interface BookService {
     BookResponseDTO saveBook(BookRequestDTO bookRequestDTO);
     BookResponseDTO updateBook(Long id, BookRequestDTO bookRequestDTO);
     void deleteBook(Long id);
+    BookResponseDTO uploadImage(Long id, org.springframework.web.multipart.MultipartFile file);
+    BookResponseDTO deleteImage(Long id);
 }
