@@ -3,7 +3,7 @@ spring:
     name: book-service
 
   config:
-    import: "configserver"
+    import: "optional:configserver:"
 
   cloud:
     config:
