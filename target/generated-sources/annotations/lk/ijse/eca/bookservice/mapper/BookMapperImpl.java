@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2026-03-19T12:42:58+0530",
-    comments = "version: 1.6.3, compiler: javac, environment: Java 25.0.2 (Oracle Corporation)"
+    date = "2026-03-25T12:53:17+0530",
+    comments = "version: 1.6.3, compiler: Eclipse JDT (IDE) 3.45.0.v20260224-0835, environment: Java 21.0.10 (Eclipse Adoptium)"
 )
 @Component
 public class BookMapperImpl implements BookMapper {
@@ -22,10 +22,10 @@ public class BookMapperImpl implements BookMapper {
 
         Book book = new Book();
 
-        book.setTitle( requestDTO.getTitle() );
         book.setAuthor( requestDTO.getAuthor() );
         book.setIsbn( requestDTO.getIsbn() );
         book.setStock( requestDTO.getStock() );
+        book.setTitle( requestDTO.getTitle() );
 
         return book;
     }
@@ -38,12 +38,12 @@ public class BookMapperImpl implements BookMapper {
 
         BookResponseDTO bookResponseDTO = new BookResponseDTO();
 
-        bookResponseDTO.setId( book.getId() );
-        bookResponseDTO.setTitle( book.getTitle() );
         bookResponseDTO.setAuthor( book.getAuthor() );
+        bookResponseDTO.setId( book.getId() );
+        bookResponseDTO.setImageUrl( book.getImageUrl() );
         bookResponseDTO.setIsbn( book.getIsbn() );
         bookResponseDTO.setStock( book.getStock() );
-        bookResponseDTO.setImageUrl( book.getImageUrl() );
+        bookResponseDTO.setTitle( book.getTitle() );
 
         return bookResponseDTO;
     }
