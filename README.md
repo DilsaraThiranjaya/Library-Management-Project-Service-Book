@@ -1,5 +1,14 @@
 # Services: Book Service
 
+### Student Information
+- **Student Name**: Dilsara Thiranjaya
+- **Student Number**: 2301692050
+- **Slack Handle**: Dilsara Thiranjaya
+- **GCP Project ID**: dilsara
+
+---
+
+
 This repository contains the Spring Boot Book Service microservice for the Library Management System.
 
 ## Architectural Purpose
